@@ -19,11 +19,12 @@ class LoginScreen extends StatelessWidget {
 
   Widget emailField() {
     return TextField(
-        keyboardType: TextInputType.emailAddress,
-        decoration: InputDecoration(
+      keyboardType: TextInputType.emailAddress,
+      decoration: InputDecoration(
           hintText: 'you@example.com',
           labelText: 'Email Address',
-        ));
+          errorText: 'Invalid Email Address'),
+    );
   }
 
   Widget passwordField() {
