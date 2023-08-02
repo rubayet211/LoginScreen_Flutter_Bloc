@@ -1,6 +1,6 @@
-# login_bloc
+# Log In using Flutter Bloc
 
-A new Flutter project.
+A new Flutter project where I am learning to use Flutter BLOC by making a Login page.
 
 ## Getting Started
 
