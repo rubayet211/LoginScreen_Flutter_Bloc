@@ -4,7 +4,8 @@ import '../blocs/bloc.dart';
 class Provider extends InheritedWidget {
   final bloc = Bloc();
 
-  Provider({Key? key, Widget? child}) : super(key: key, child: child);
+  Provider({Key? key, Widget? child})
+      : super(key: key, child: child ?? Container());
 
   bool updateShouldNotify(oldWidget) => true;
 
