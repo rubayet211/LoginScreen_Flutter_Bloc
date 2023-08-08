@@ -57,11 +57,11 @@ class LoginScreen extends StatelessWidget {
 
   Widget submitButton() {
     return ElevatedButton(
-      child: Text('Submit!'),
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(Colors.cyan),
       ),
       onPressed: () {},
+      child: Text('Submit!'),
     );
   }
 }

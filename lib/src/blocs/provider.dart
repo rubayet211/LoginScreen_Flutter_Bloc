@@ -6,7 +6,7 @@ class Provider extends InheritedWidget {
 
   Provider({Key? key, Widget? child})
       : super(key: key, child: child ?? Container());
-
+  @override
   bool updateShouldNotify(oldWidget) => true;
 
   static Bloc of(BuildContext context) {
