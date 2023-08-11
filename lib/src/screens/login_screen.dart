@@ -63,7 +63,11 @@ class LoginScreen extends StatelessWidget {
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.cyan),
           ),
-          onPressed: () {},
+          onPressed: snapshot.hasError
+              ? null
+              : () {
+                  print('Hi there!');
+                },
           child: Text('Submit!'),
         );
       },
